@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Spotify</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <nav class="main-nav">
+
+            <a href="#" class="nav-item active">
+                <span>🏠</span>
+                Início
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>🔍</span>
+                Buscar
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>🎵</span>
+                Sua Biblioteca
+            </a>
+
+        </nav>
+
+        <div class="playlist-section">
+
+            <h3>PLAYLISTS</h3>
+
+            <button class="playlist-action">
+                <span>+</span>
+                Criar Playlist
+            </button>
+
+            <button class="playlist-action liked">
+                <span>♥</span>
+                Curtidas
+            </button>
+
+        </div>
+
+        <div class="playlist-list">
+
+            <a href="#">Melhores de 2021</a>
+            <a href="#">Para ouvir no trabalho</a>
+            <a href="#">Melhores Sertanejo</a>
+            <a href="#">R&B</a>
+            <a href="#">RapCaviar</a>
+
+        </div>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div class="nav-buttons">
+                <button>‹</button>
+                <button>›</button>
+            </div>
+
+            <div class="profile">
+
+                <div class="avatar"></div>
+
+                <span>Marcel Lemos</span>
+
+                <button id="profileToggle">▼</button>
+
+                <div class="profile-menu" id="profileMenu">
+                    <a href="#">Conta</a>
+                    <a href="#">Configurações</a>
+                    <a href="#">SAIR</a>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="hero">
+
+            <h1>Bom Dia</h1>
+
+            <div class="quick-grid">
+
+                <div class="quick-card">
+                   <img src="./img/iceman.png" alt="Ice Man" class="cover">
+                     <span>Ice Man</span>
+                </div>
+
+                <div class="quick-card">
+                    <img src="./img/cb.png" alt="CB" class="cover">
+                    <span>Chris Brown</span>
+                </div>
+
+                <div class="quick-card">
+                    <img src="./img/macmiler.png" alt="Mac Miller" class="cover">
+                    <span>Mac Miller</span>
+                </div>
+
+                <div class="quick-card">
+                    <img src="./img/dailymix.png" alt="Daily Mix 1" class="cover">
+                    <span>Daily Mix 1</span>
+                </div>
+
+                <div class="quick-card">
+                    <img src="./img/ellamai.png" alt="Ella Mai" class="cover">
+                    <span>Ella Mai</span>
+                </div>
+
+                <div class="quick-card">
+                    <img src="./img/don toliver.png" alt="Don Toliver" class="cover">
+                    <span>Don Toliver</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-header">
+                <h2>Suas músicas diária</h2>
+                <a href="#">VER MAIS</a>
+            </div>
+
+            <div class="albums">
+
+                <article class="album">
+                    <img src="./img/cb.png" alt="CB" class="album-cover">
+                    <h3>Chris Brown</h3>
+                    <p>WE (Warm Embrace)</p>
+                </article>
+
+                <article class="album">
+                    <img src="./img/iceman.png" alt="Ice Man" class="almbum-cover">
+                    <h3>Drake</h3>
+                    <p>Plot Twist</p>
+                </article>
+
+                <article class="album">
+                    <img src="./img/ellamai.png" alt="Ella Mai" class="album-cover">
+                    <h3>Ella Mai</h3>
+                    <p>Little Things</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<footer class="player">
+
+    <div class="track-info">
+
+        <img src="./img/macmiler.png" alt="Mac Miller" class="track-cover">
+
+        <div>
+            <h4>Mac Miller</h4>
+            <p>Objects in the mirror</p>
+        </div>
+
+    </div>
+
+    <div class="player-center">
+
+        <div class="controls">
+            <button>🔀</button>
+            <button>⏮</button>
+            <button class="play-btn">▶</button>
+            <button>⏭</button>
+            <button>🔁</button>
+        </div>
+
+        <div class="progress">
+            <span>0:00</span>
+            <input type="range" value="0">
+            <span>4:25</span>
+        </div>
+
+    </div>
+
+    <div class="player-right">
+
+        <button>☰</button>
+        <button>🔊</button>
+
+        <input type="range" value="70">
+
+    </div>
+
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
