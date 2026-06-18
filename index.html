@@ -1,211 +1,298 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Spotify</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Spotify</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
-
 <body>
 
 <div class="app">
 
-    <aside class="sidebar">
+  <!-- ── SIDEBAR ───────────────────────────────────────────────── -->
+  <aside class="sidebar">
 
-        <nav class="main-nav">
+    <div class="brand">
+      <h1 class="brand-name">My Spotify</h1>
+      <p class="brand-sub">Assinatura Premium</p>
+    </div>
 
-            <a href="#" class="nav-item active">
-                <span>🏠</span>
-                Início
-            </a>
+    <nav class="nav scroll">
 
-            <a href="#" class="nav-item">
-                <span>🔍</span>
-                Buscar
-            </a>
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li>
+          <a href="#" class="nav-item active">
+            <span class="material-symbols-outlined nav-icon">home</span>
+            <span class="nav-label">Início</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">
+            <span class="material-symbols-outlined nav-icon">search</span>
+            <span class="nav-label">Buscar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">
+            <span class="material-symbols-outlined nav-icon">library_music</span>
+            <span class="nav-label">Sua Biblioteca</span>
+          </a>
+        </li>
+      </ul>
 
-            <a href="#" class="nav-item">
-                <span>🎵</span>
-                Sua Biblioteca
-            </a>
+      <!-- Create playlist -->
+      <button class="btn-create">
+        <span class="material-symbols-outlined">add</span>
+        Criar Playlist
+      </button>
 
-        </nav>
+      <!-- Library shortcuts -->
+      <ul class="nav-divider">
+        <li>
+          <a href="#" class="nav-item">
+            <span class="material-symbols-outlined nav-icon">favorite</span>
+            <span class="nav-label">Músicas Curtidas</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">
+            <span class="material-symbols-outlined nav-icon">podcasts</span>
+            <span class="nav-label">Seus Podcasts</span>
+          </a>
+        </li>
+      </ul>
 
-        <div class="playlist-section">
+      <!-- Playlists -->
+      <p class="nav-section-title">Playlists</p>
+      <ul class="nav-list">
+        <li><a href="#" class="playlist-link">Daily mix</a></li>
+        <li><a href="#" class="playlist-link">R&B</a></li>
+        <li><a href="#" class="playlist-link">CB</a></li>
+        <li><a href="#" class="playlist-link">H&J</a></li>
+      </ul>
 
-            <h3>PLAYLISTS</h3>
+    </nav>
+  </aside>
 
-            <button class="playlist-action">
-                <span>+</span>
-                Criar Playlist
-            </button>
+  <!-- ── MAIN ──────────────────────────────────────────────────── -->
+  <main class="main">
 
-            <button class="playlist-action liked">
-                <span>♥</span>
-                Curtidas
-            </button>
+    <!-- Header -->
+    <header class="header">
+      <div class="nav-arrows">
+        <button class="btn-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="btn-arrow off"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div class="profile-pill">
+        <div class="avatar">
+          <img src="./img/B3E413D4-CB29-4318-A5CD-61D4CB0A76C0.png" alt="Alex Rivera" />
+        </div>
+        <span>Marcel Lemos</span>
+        <i class="fa-solid fa-caret-down caret"></i>
+      </div>
+    </header>
+
+    <!-- Scrollable content -->
+    <div class="content scroll">
+
+      <!-- Greeting -->
+      <section class="section-greeting">
+        <h2 class="greeting-title">Bom Dia</h2>
+
+        <div class="grid-quick">
+
+          <div class="card-quick">
+            <div class="card-quick-thumb">
+              <img src="./img/dailymix.png" alt="daily mix" />
+            </div>
+            <div class="card-quick-body">
+              <span class="card-quick-title">Daily Mix</span>
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
+
+          <div class="card-quick">
+            <div class="card-quick-thumb">
+              <img src="./img/chillhop.png" alt="Chillhop" />
+            </div>
+            <div class="card-quick-body">
+              <span class="card-quick-title">Chillhop Radio</span>
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
+
+          <div class="card-quick">
+            <div class="card-quick-thumb">
+              <img src="./img/don toliver.png" alt="Don toliver" />
+            </div>
+            <div class="card-quick-body">
+              <span class="card-quick-title">Don Toliver</span>
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
+
+          <div class="card-quick">
+            <div class="card-quick-thumb">
+              <img src="./img/sertanejo.png" alt="Sertanejo" />
+            </div>
+            <div class="card-quick-body">
+              <span class="card-quick-title">Sertanejo</span>
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
+
+          <div class="card-quick">
+            <div class="card-quick-thumb">
+              <img src="./img/rapcaviar.png" alt="rapcaviar" />
+            </div>
+            <div class="card-quick-body">
+              <span class="card-quick-title">Rap Caviar</span>
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
+
+          <div class="card-quick">
+            <div class="card-quick-thumb">
+              <img src="./img/hj.png" alt="H&J" />
+            </div>
+            <div class="card-quick-body">
+              <span class="card-quick-title">Henrique & Juliano</span>
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
 
         </div>
+      </section>
 
-        <div class="playlist-list">
+      <!-- Heavy Rotation -->
+      <section class="section-rotation">
 
-            <a href="#">Melhores de 2021</a>
-            <a href="#">Para ouvir no trabalho</a>
-            <a href="#">Melhores Sertanejo</a>
-            <a href="#">R&B</a>
-            <a href="#">RapCaviar</a>
-
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">As mais tocadas</h2>
+            <p class="section-sub">Para ouvir sem parar.</p>
+          </div>
+          <a href="#" class="show-all">Ver Tudo</a>
         </div>
 
-    </aside>
+        <div class="row-albums scroll">
 
-    <main class="content">
-
-        <header class="topbar">
-
-            <div class="nav-buttons">
-                <button>‹</button>
-                <button>›</button>
+          <div class="card-album">
+            <div class="card-album-art">
+              <img src="./img/cb.png" alt="CB" />
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
             </div>
+            <h3 class="card-album-title">Survive The Night</h3>
+            <p class="card-album-artist">Chris Brown</p>
+          </div>
 
-            <div class="profile">
-
-                <div class="avatar"></div>
-
-                <span>Marcel Lemos</span>
-
-                <button id="profileToggle">▼</button>
-
-                <div class="profile-menu" id="profileMenu">
-                    <a href="#">Conta</a>
-                    <a href="#">Configurações</a>
-                    <a href="#">SAIR</a>
-                </div>
-
+          <div class="card-album">
+            <div class="card-album-art">
+              <img src="./img/iceman.png" alt="ice man" />
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
             </div>
+            <h3 class="card-album-title">Janice STFU</h3>
+            <p class="card-album-artist">Drake</p>
+          </div>
 
-        </header>
-
-
-        <section class="hero">
-
-            <h1>Bom Dia</h1>
-
-            <div class="quick-grid">
-
-                <div class="quick-card">
-                   <img src="./img/iceman.png" alt="Ice Man" class="cover">
-                     <span>Ice Man</span>
-                </div>
-
-                <div class="quick-card">
-                    <img src="./img/cb.png" alt="CB" class="cover">
-                    <span>Chris Brown</span>
-                </div>
-
-                <div class="quick-card">
-                    <img src="./img/macmiler.png" alt="Mac Miller" class="cover">
-                    <span>Mac Miller</span>
-                </div>
-
-                <div class="quick-card">
-                    <img src="./img/dailymix.png" alt="Daily Mix 1" class="cover">
-                    <span>Daily Mix 1</span>
-                </div>
-
-                <div class="quick-card">
-                    <img src="./img/ellamai.png" alt="Ella Mai" class="cover">
-                    <span>Ella Mai</span>
-                </div>
-
-                <div class="quick-card">
-                    <img src="./img/don toliver.png" alt="Don Toliver" class="cover">
-                    <span>Don Toliver</span>
-                </div>
-
+          <div class="card-album">
+            <div class="card-album-art">
+              <img src="./img/macmiler.png" alt="mac miller" />
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
             </div>
+            <h3 class="card-album-title">Blue World</h3>
+            <p class="card-album-artist">Mac Miller</p>
+          </div>
 
-        </section>
-
-
-        <section class="section">
-
-            <div class="section-header">
-                <h2>Suas músicas diária</h2>
-                <a href="#">VER MAIS</a>
+          <div class="card-album">
+            <div class="card-album-art">
+              <img src="./img/ellamai.png" alt="ella mai" />
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
             </div>
+            <h3 class="card-album-title">Little Things</h3>
+            <p class="card-album-artist">Ella Mai</p>
+          </div>
 
-            <div class="albums">
-
-                <article class="album">
-                    <img src="./img/cb.png" alt="CB" class="album-cover">
-                    <h3>Chris Brown</h3>
-                    <p>WE (Warm Embrace)</p>
-                </article>
-
-                <article class="album">
-                    <img src="./img/iceman.png" alt="Ice Man" class="almbum-cover">
-                    <h3>Drake</h3>
-                    <p>Plot Twist</p>
-                </article>
-
-                <article class="album">
-                    <img src="./img/ellamai.png" alt="Ella Mai" class="album-cover">
-                    <h3>Ella Mai</h3>
-                    <p>Little Things</p>
-                </article>
-
+          <div class="card-album">
+            <div class="card-album-art">
+              <img src="./img/r$b mix.png" alt="rb mix" />
+              <button class="btn-play"><i class="fa-solid fa-play"></i></button>
             </div>
+            <h3 class="card-album-title">Flatline</h3>
+            <p class="card-album-artist">Justin Bieber</p>
+          </div>
 
-        </section>
+        </div>
+      </section>
 
-    </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="#" class="footer-link">Política de Privacidade</a>
+        </div>
+        <p class="footer-copy">© 2026 My Spotify</p>
+      </footer>
 
-</div>
+    </div><!-- /content -->
 
+    <!-- ── PLAYER BAR ──────────────────────────────────────────── -->
+    <div class="player">
 
-<footer class="player">
-
-    <div class="track-info">
-
-        <img src="./img/macmiler.png" alt="Mac Miller" class="track-cover">
-
+      <!-- Now playing -->
+      <div class="now-playing">
+        <div class="now-art">
+          <img src="./img/iceman.png" alt="plot twist" />
+        </div>
         <div>
-            <h4>Mac Miller</h4>
-            <p>Objects in the mirror</p>
+          <h4 class="now-title">Plot Twist</h4>
+          <p class="now-artist">Drake</p>
         </div>
+        <button class="btn-like"><i class="fa-regular fa-heart"></i></button>
+      </div>
 
-    </div>
-
-    <div class="player-center">
-
-        <div class="controls">
-            <button>🔀</button>
-            <button>⏮</button>
-            <button class="play-btn">▶</button>
-            <button>⏭</button>
-            <button>🔁</button>
+      <!-- Controls -->
+      <div class="controls">
+        <div class="ctrl-buttons">
+          <button class="btn-ctrl"><i class="fa-solid fa-shuffle"></i></button>
+          <button class="btn-ctrl btn-ctrl-lg"><i class="fa-solid fa-backward-step"></i></button>
+          <button class="btn-play-main"><i class="fa-solid fa-play"></i></button>
+          <button class="btn-ctrl btn-ctrl-lg"><i class="fa-solid fa-forward-step"></i></button>
+          <button class="btn-ctrl"><i class="fa-solid fa-repeat"></i></button>
         </div>
-
-        <div class="progress">
-            <span>0:00</span>
-            <input type="range" value="0">
-            <span>4:25</span>
+        <div class="progress-row">
+          <span class="time left">1:24</span>
+          <div class="progress-bar">
+            <div class="progress-fill">
+              <div class="progress-thumb"></div>
+            </div>
+          </div>
+          <span class="time right">3:52</span>
         </div>
+      </div>
 
-    </div>
+      <!-- Extras -->
+      <div class="player-extras">
+        <button class="btn-extra"><i class="fa-solid fa-microphone"></i></button>
+        <button class="btn-extra"><i class="fa-solid fa-list"></i></button>
+        <button class="btn-extra"><i class="fa-solid fa-computer"></i></button>
+        <div class="volume-row">
+          <i class="fa-solid fa-volume-high volume-icon"></i>
+          <div class="volume-bar">
+            <div class="volume-fill"></div>
+          </div>
+        </div>
+      </div>
 
-    <div class="player-right">
+    </div><!-- /player -->
 
-        <button>☰</button>
-        <button>🔊</button>
-
-        <input type="range" value="70">
-
-    </div>
-
-</footer>
+  </main>
+</div><!-- /app -->
 
 <script src="scripts.js"></script>
 </body>
